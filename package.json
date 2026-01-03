@@ -1,0 +1,20 @@
+{
+  "name": "stylesphere-luxury",
+  "version": "1.0.0",
+  "description": "Luxury AI-Powered Personal Styling Platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "build": "echo 'Build completed'",
+    "deploy": "echo 'Deploy to Vercel'"
+  },
+  "keywords": ["luxury", "fashion", "styling", "ai", "perfume"],
+  "author": "StyleSphere Team",
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^2.3.4"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

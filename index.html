@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleSphere Luxury | AI-Powered Personal Styling</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Premium AI-powered personal styling service. Get luxury perfume, fashion, and complete outfit recommendations tailored to your personality.">
+    <meta name="keywords" content="luxury perfume, personal stylist, fashion recommendations, AI styling, luxury brands, premium fashion">
+    <meta name="author" content="StyleSphere Luxury">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="StyleSphere Luxury | Your Personal AI Stylist">
+    <meta property="og:description" content="Experience luxury personal styling powered by AI. Get recommendations from premium brands worldwide.">
+    <meta property="og:image" content="https://stylesphere-luxury.com/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://stylesphere-luxury.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="StyleSphere Luxury">
+    <meta name="twitter:description" content="AI-powered luxury personal styling service">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="luxury-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <span class="logo-text">StyleSphere<span class="luxury-badge">LUXURY</span></span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#dashboard" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#recommendations" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Recommendations</span>
+                </a>
+                <a href="#brands" class="nav-link">
+                    <i class="fas fa-gem"></i>
+                    <span>Luxury Brands</span>
+                </a>
+                <a href="#blog" class="nav-link">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Style Journal</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn-icon" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="user-profile">
+                    <div class="avatar luxury-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Alexander</span>
+                        <span class="user-tier">Platinum Member</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="luxury-main">
+        <!-- Hero Section -->
+        <section class="luxury-hero" data-aos="fade-in">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="text-gold">Elevate Your Style</span>
+                    <span class="hero-subtitle">With AI-Powered Luxury</span>
+                </h1>
+                <p class="hero-description">
+                    Experience bespoke perfume, fashion, and accessory recommendations from the world's most exclusive brands. Your personal luxury stylist, powered by artificial intelligence.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">850+</span>
+                        <span class="stat-label">Luxury Brands</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">94%</span>
+                        <span class="stat-label">Match Accuracy</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Stylist Support</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="floating-element perfume-bottle" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <div class="floating-element clothing" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="floating-element shoes" data-aos="fade-up" data-aos-delay="600">
+                        <i class="fas fa-shoe-prints"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard -->
+        <section class="dashboard-section" id="dashboard">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-user-edit"></i>
+                    Your Luxury Style Profile
+                </h2>
+                <p class="section-subtitle">Personalize your experience for precise luxury recommendations</p>
+            </div>
+            
+            <div class="dashboard-grid">
+                <!-- Profile Form -->
+                <div class="profile-form luxury-card">
+                    <form id="styleProfileForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">
+                                    <i class="fas fa-user"></i>
+                                    Personal Details
+                                </label>
+                                <input type="text" class="luxury-input" placeholder="Full Name" value="Alexander Sterling">
+                                <div class="gender-select">
+                                    <div class="gender-option active" data-value="gentleman">
+                                        <i class="fas fa-mars"></i>
+                                        <span>Gentleman</span>
+                                    </div>
+                                    <div class="gender-option" data-value="lady">
+                                        <i class="fas fa-venus"></i>
+                                        <span>Lady</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">
+                                    <i class="fas fa-heart"></i>
+                                    Style Personality
+                                </label>
+                                <div class="personality-chips">
+                                    <div class="chip active" data-value="classic">Classic</div>
+                                    <div class="chip" data-value="modern">Modern</div>
+                                    <div class="chip" data-value="bohemian">Bohemian</div>
+                                    <div class="chip" data-value="minimalist">Minimalist</div>
+                                    <div class="chip" data-value="avantgarde">Avant-Garde</div>
+                                    <div class="chip" data-value="sporty">Sporty</div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">
+                                    <i class="fas fa-calendar-star"></i>
+                                    Occasion Preferences
+                                </label>
+                                <select class="luxury-select" id="occasionSelect">
+                                    <option value="black-tie">Black Tie Events</option>
+                                    <option value="business" selected>Business & Office</option>
+                                    <option value="cocktail">Cocktail Parties</option>
+                                    <option value="weekend">Weekend Luxury</option>
+                                    <option value="travel">Travel & Vacation</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">
+                                    <i class="fas fa-coins"></i>
+                                    Investment Range
+                                </label>
+                                <select class="luxury-select" id="budgetSelect">
+                                    <option value="500-2000">$500 - $2,000</option>
+                                    <option value="2000-10000" selected>$2,000 - $10,000</option>
+                                    <option value="10000-50000">$10,000 - $50,000</option>
+                                    <option value="50000+">$50,000+</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label class="form-label">
+                                    <i class="fas fa-palette"></i>
+                                    Color & Material Preferences
+                                </label>
+                                <textarea class="luxury-textarea" id="stylePreferences" placeholder="Describe your preferred colors, materials, and style notes...">Prefer deep navy, charcoal, and burgundy. Love Italian wool, cashmere, and fine leather. Minimalist aesthetic with attention to craftsmanship.</textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="luxury-btn gold-gradient">
+                            <i class="fas fa-sync-alt"></i>
+                            Update Style Profile
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Recommendations -->
+                <div class="recommendations luxury-card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-crown"></i>
+                            Curated For You
+                        </h3>
+                        <div class="card-actions">
+                            <button class="btn-icon" id="filterBtn">
+                                <i class="fas fa-filter"></i>
+                            </button>
+                            <button class="btn-icon" id="refreshBtn">
+                                <i class="fas fa-sync"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="recommendations-grid" id="recommendationsContainer">
+                        <!-- Recommendations loaded via JavaScript -->
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="dashboard-sidebar">
+                    <!-- Profile Summary -->
+                    <div class="sidebar-card luxury-card">
+                        <div class="profile-summary">
+                            <div class="profile-avatar gold-border">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4 class="profile-name" id="profileNameDisplay">Alexander Sterling</h4>
+                            <div class="profile-tier">
+                                <i class="fas fa-gem"></i>
+                                Platinum Tier
+                            </div>
+                            <div class="style-score">
+                                <div class="score-header">
+                                    <span>Style Match Score</span>
+                                    <span class="score-value">92%</span>
+                                </div>
+                                <div class="score-bar">
+                                    <div class="score-fill" style="width: 92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Activity -->
+                    <div class="sidebar-card luxury-card">
+                        <h4 class="sidebar-title">
+                            <i class="fas fa-history"></i>
+                            Recent Activity
+                        </h4>
+                        <div class="activity-list" id="activityList">
+                            <!-- Activities loaded via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <!-- Ad Space -->
+                    <div class="ad-space luxury-card">
+                        <div class="ad-placeholder">
+                            <i class="fas fa-ad"></i>
+                            <p>Premium Ad Space</p>
+                            <small>300x600</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Luxury Brands Showcase -->
+        <section class="brands-section" id="brands">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-gem"></i>
+                    Featured Luxury Houses
+                </h2>
+                <p class="section-subtitle">Curated selection from the world's most exclusive brands</p>
+            </div>
+            
+            <div class="brands-grid">
+                <div class="brand-card" data-aos="zoom-in">
+                    <div class="brand-logo tomford">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h4 class="brand-name">Tom Ford</h4>
+                    <p class="brand-category">Fragrance & Fashion</p>
+                </div>
+                
+                <div class="brand-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="brand-logo brioni">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h4 class="brand-name">Brioni</h4>
+                    <p class="brand-category">Tailoring</p>
+                </div>
+                
+                <div class="brand-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="brand-logo loro">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h4 class="brand-name">Loro Piana</h4>
+                    <p class="brand-category">Cashmere</p>
+                </div>
+                
+                <div class="brand-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="brand-logo cartier">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h4 class="brand-name">Cartier</h4>
+                    <p class="brand-category">Jewelry & Watches</p>
+                </div>
+                
+                <div class="brand-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="brand-logo gucci">
+                        <i class="fas fa-lion"></i>
+                    </div>
+                    <h4 class="brand-name">Gucci</h4>
+                    <p class="brand-category">Luxury Fashion</p>
+                </div>
+                
+                <div class="brand-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="brand-logo hermes">
+                        <i class="fas fa-horse"></i>
+                    </div>
+                    <h4 class="brand-name">Hermès</h4>
+                    <p class="brand-category">Leather & Silk</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-section" id="blog">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-newspaper"></i>
+                    The Luxury Journal
+                </h2>
+                <p class="section-subtitle">Insights, trends, and stories from the world of luxury</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card luxury-card" data-aos="fade-up">
+                    <div class="blog-image perfume-bg"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Fragrance</span>
+                            <span class="blog-date">March 15, 2024</span>
+                        </div>
+                        <h3 class="blog-title">The Art of Signature Scents: Finding Your Olfactory Identity</h3>
+                        <p class="blog-excerpt">Discover how to select a signature fragrance that becomes an extension of your personality and leaves a lasting impression.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card luxury-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image tailoring-bg"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Tailoring</span>
+                            <span class="blog-date">March 10, 2024</span>
+                        </div>
+                        <h3 class="blog-title">Bespoke vs. Made-to-Measure: Understanding True Customization</h3>
+                        <p class="blog-excerpt">A comprehensive guide to understanding the differences between bespoke and made-to-measure clothing.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card luxury-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image watch-bg"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Watches</span>
+                            <span class="blog-date">March 5, 2024</span>
+                        </div>
+                        <h3 class="blog-title">Investing in Timepieces: What Makes a Watch Truly Valuable</h3>
+                        <p class="blog-excerpt">Learn about the factors that contribute to a watch's value as both a timepiece and an investment.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fas fa-crown"></i>
+                    <span>StyleSphere<span class="luxury-badge">LUXURY</span></span>
+                </div>
+                <p class="footer-tagline">Redefining Personal Style Through Artificial Intelligence</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4 class="link-title">Services</h4>
+                    <a href="#">Personal Styling</a>
+                    <a href="#">Fragrance Consulting</a>
+                    <a href="#">Wardrobe Audit</a>
+                    <a href="#">Shopping Concierge</a>
+                </div>
+                
+                <div class="link-group">
+                    <h4 class="link-title">Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Stylists</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                </div>
+                
+                <div class="link-group">
+                    <h4 class="link-title">Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">GDPR</a>
+                </div>
+                
+                <div class="link-group">
+                    <h4 class="link-title">Contact</h4>
+                    <a href="#">Client Support</a>
+                    <a href="#">Partnerships</a>
+                    <a href="#">Press Inquiries</a>
+                    <a href="#">Stylist Application</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 StyleSphere Luxury. All rights reserved.</p>
+            <div class="footer-extra">
+                <span>ISO 27001 Certified</span>
+                <span>100% Satisfaction Guarantee</span>
+                <span>24/7 Client Support</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
