@@ -1,25 +1,24 @@
 # StyleSphere Luxury
 
-Premium AI-powered personal styling platform.
+**StyleSphere Luxury** — a premium AI-powered personal styling platform (static web app / PWA-style site).
 
-## Quick Start
+## Structure
 
-1. Clone or download all files
-2. Open `index.html` in browser
-3. Or run: `npx live-server`
+| File / folder | Purpose |
+| --- | --- |
+| `index.html` | App entry — "StyleSphere Luxury \| AI-Powered Personal Styling" |
+| `style.css` | Luxury styling/theme |
+| `script.js` | App behaviour |
+| `firebase-config.js` | Firebase configuration hookup |
+| `manifest.json` | Web app manifest (installable web app) |
+| `package.json` | Project metadata (`stylesphere-luxury`); only runtime dependency is `aos` (Animate On Scroll) |
+| `robots.txt`, `sitemap.xml`, `.htaccess` | SEO and Apache hosting files |
+| `assets/` | Images/media |
 
-## Features
+## Running locally
 
-- Luxury dark theme with gold accents
-- AI-powered recommendations
-- User profile system
-- Real-time updates
-- Responsive design
-- SEO optimized
+Open `index.html` in a browser, or serve the folder with any static server, e.g.:
 
-## Deployment
-
-Deploy to Vercel:
 ```bash
-npm install -g vercel
-vercel --prod
+npx serve .
+```
